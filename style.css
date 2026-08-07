@@ -130,6 +130,15 @@ body {
   padding: 2rem 1rem;
 }
 
+.eyebrow {
+  margin-bottom: 0.65rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
 .avatar {
   width: 140px;
   height: 140px;
@@ -255,6 +264,79 @@ h2::after {
   height: 4px;
   border-radius: 2px;
   background: linear-gradient(90deg, #6366f1, #22d3ee);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(190px, 0.65fr);
+  gap: 2.2rem;
+}
+
+.subheading {
+  margin-bottom: 1rem;
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+.education-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.education-item {
+  padding-left: 1rem;
+  border-left: 3px solid #818cf8;
+}
+
+.education-period {
+  margin-bottom: 0.25rem;
+  color: #6366f1;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.education-item h3 {
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.education-item p {
+  font-size: 0.91rem;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.skill-group + .skill-group {
+  margin-top: 1.5rem;
+}
+
+.skill-label {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  color: #4338ca;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
 }
 
 /* ===== 论文列表 ===== */
@@ -449,6 +531,11 @@ footer {
 
   section {
     padding: 1.6rem;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 1.7rem;
   }
 
   .paper-title {
