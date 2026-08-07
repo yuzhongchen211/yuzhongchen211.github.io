@@ -93,6 +93,29 @@ h2 {
   color: #667eea;
 }
 
+/* 论文列表 */
+.papers {
+  padding-left: 1.4rem;
+}
+
+.papers li {
+  margin-bottom: 0.6rem;
+}
+
+.scholar-link {
+  margin-top: 1rem;
+}
+
+.scholar-link a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.scholar-link a:hover {
+  text-decoration: underline;
+}
+
 /* 页脚 */
 footer {
   text-align: center;
