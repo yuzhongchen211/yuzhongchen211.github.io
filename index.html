@@ -3,75 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的个人主页</title>
+  <title>Yuzhong Chen | 个人主页</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <img class="avatar" src="https://api.dicebear.com/9.x/notionists/svg?seed=me" alt="头像">
-    <h1>你的名字</h1>
-    <p class="tagline">前端开发者 / 摄影爱好者 / 终身学习者</p>
-    <div class="links">
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
+
+  <nav class="navbar">
+    <a href="#top" class="brand">YC<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">关于我</a>
+      <a href="#publications">论文</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
     </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-inner">
+      <img class="avatar" src="https://api.dicebear.com/9.x/notionists/svg?seed=me" alt="头像">
+      <h1>Yuzhong Chen</h1>
+      <p class="tagline">人工智能 / 脑影像分析 / 视觉模型研究者</p>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=2yd2jCsAAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://github.com/yuzhongchen211" target="_blank">GitHub</a>
+        <a href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="向下滚动">
+      <span></span>
+    </a>
   </header>
 
   <main>
-    <section>
+    <section id="about" class="reveal">
       <h2>关于我</h2>
       <p>在这里写一段自我介绍，介绍你的背景、技能和兴趣。</p>
     </section>
 
-    <section>
+    <section id="publications" class="reveal">
       <h2>论文</h2>
       <ol class="papers">
-        <li>When brain-inspired AI meets AGI</li>
-        <li>Adversarial learning based node-edge graph attention networks for autism spectrum disorder identification</li>
-        <li>Mask-guided BERT for few-shot text classification</li>
-        <li>Eye-gaze-guided vision transformer for rectifying shortcut learning</li>
-        <li>Modeling spatio-temporal patterns of holistic functional brain networks via multi-head guided attention graph neural networks (Multi-Head GAGNNs)</li>
-        <li>Characterizing functional brain networks via spatio-temporal attention 4D convolutional neural networks (STA-4DCNNs)</li>
-        <li>Digital twin (DT)-CycleGAN: Enabling zero-shot sim-to-real transfer of visual grasping models</li>
-        <li>Instruction-ViT: Multi-modal prompts for instruction learning in vision transformer</li>
-        <li>A brain structural connectivity biomarker for autism spectrum disorder diagnosis in early childhood</li>
-        <li>Anatomy-guided spatio-temporal graph convolutional networks (AG-STGCNs) for modeling functional connectivity between gyri and sulci across multiple task domains</li>
-        <li>Mask-guided vision transformer (MG-ViT) for few-shot learning</li>
-        <li>Exploring functional difference between gyri and sulci via region-specific 1D convolutional neural networks</li>
-        <li>A unified and biologically plausible relational graph representation of vision transformers</li>
-        <li>Attention-based node-edge graph convolutional networks for identification of autism spectrum disorder using multi-modal MRI data</li>
-        <li>A guided attention 4D convolutional neural network for modeling spatio-temporal patterns of functional brain networks</li>
+        <li><span class="paper-title">When brain-inspired AI meets AGI</span></li>
+        <li><span class="paper-title">Adversarial learning based node-edge graph attention networks for autism spectrum disorder identification</span></li>
+        <li><span class="paper-title">Mask-guided BERT for few-shot text classification</span></li>
+        <li><span class="paper-title">Eye-gaze-guided vision transformer for rectifying shortcut learning</span></li>
+        <li><span class="paper-title">Modeling spatio-temporal patterns of holistic functional brain networks via multi-head guided attention graph neural networks (Multi-Head GAGNNs)</span></li>
+        <li><span class="paper-title">Characterizing functional brain networks via spatio-temporal attention 4D convolutional neural networks (STA-4DCNNs)</span></li>
+        <li><span class="paper-title">Digital twin (DT)-CycleGAN: Enabling zero-shot sim-to-real transfer of visual grasping models</span></li>
+        <li><span class="paper-title">Instruction-ViT: Multi-modal prompts for instruction learning in vision transformer</span></li>
+        <li><span class="paper-title">A brain structural connectivity biomarker for autism spectrum disorder diagnosis in early childhood</span></li>
+        <li><span class="paper-title">Anatomy-guided spatio-temporal graph convolutional networks (AG-STGCNs) for modeling functional connectivity between gyri and sulci across multiple task domains</span></li>
+        <li><span class="paper-title">Mask-guided vision transformer (MG-ViT) for few-shot learning</span></li>
+        <li><span class="paper-title">Exploring functional difference between gyri and sulci via region-specific 1D convolutional neural networks</span></li>
+        <li><span class="paper-title">A unified and biologically plausible relational graph representation of vision transformers</span></li>
+        <li><span class="paper-title">Attention-based node-edge graph convolutional networks for identification of autism spectrum disorder using multi-modal MRI data</span></li>
+        <li><span class="paper-title">A guided attention 4D convolutional neural network for modeling spatio-temporal patterns of functional brain networks</span></li>
       </ol>
-      <p class="scholar-link"><a href="https://scholar.google.com/citations?user=2yd2jCsAAAAJ" target="_blank">查看完整论文与引用统计 → Google Scholar 主页</a></p>
+      <a class="btn" href="https://scholar.google.com/citations?user=2yd2jCsAAAAJ" target="_blank">查看完整论文与引用统计 →</a>
     </section>
 
-    <section>
+    <section id="projects" class="reveal">
       <h2>项目</h2>
       <div class="cards">
         <div class="card">
+          <div class="card-icon">🧠</div>
           <h3>项目一</h3>
           <p>项目的简短描述。</p>
         </div>
         <div class="card">
+          <div class="card-icon">🤖</div>
           <h3>项目二</h3>
           <p>项目的简短描述。</p>
         </div>
         <div class="card">
+          <div class="card-icon">👁️</div>
           <h3>项目三</h3>
           <p>项目的简短描述。</p>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="contact" class="reveal">
       <h2>联系我</h2>
-      <p>欢迎通过邮件或社交媒体与我联系。</p>
+      <p>欢迎通过邮件或社交媒体与我联系，一起交流学术与研究。</p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com">✉️ 邮箱联系</a>
+        <a href="https://github.com/yuzhongchen211" target="_blank">🐙 GitHub</a>
+        <a href="https://scholar.google.com/citations?user=2yd2jCsAAAAJ" target="_blank">📚 Google Scholar</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 你的名字</p>
+    <p>© 2026 Yuzhong Chen · 用 ❤️ 与 GitHub Pages 构建</p>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
 </body>
 </html>
